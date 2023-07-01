@@ -57,3 +57,19 @@ Premiere problematique utiliser le WebRPC pour acquerir les cameras
 https://adaickalavan.github.io/portfolio/go_webrtc/#gsc.tab=0
 ```
 
+git clone https://github.com/Adaickalavan/Go-WebRTC.git
+
+docker build -t gowebrtc .
+docker run --detach --name demo --publish 192.168.1.66:1989:8088 gowebrtc
+
+
+ wget -c https://golang.org/dl/go1.19.5.linux-amd64.tar.gz
+ wget https://go.dev/dl/go1.19.10.linux-arm64.tar.gz
+
+tar xvf go1.19.5.linux-amd64.tar.gz  
+
+/home/pi/bin/go
+export PATH=$PATH:"/home/pi/bin/go/bin":"/home/pi/bin"
+export GOROOT=/home/pi/bin/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/go
